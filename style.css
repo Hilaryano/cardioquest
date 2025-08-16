@@ -1,0 +1,126 @@
+/*
+ * Basic styling for the ECG gamification app.
+ * The layout is kept simple and responsive without relying on external frameworks.
+ */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* Container centers content and constrains the width for better readability */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  margin: 0 0 1rem;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Secondary button style used for category selection */
+.category-buttons button {
+  background-color: #6c757d;
+}
+
+.category-buttons button.active {
+  background-color: #28a745;
+}
+
+/* Card for displaying questions */
+.question-card {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+/* Styling for answer option buttons */
+.options button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  background-color: #e9ecef;
+  color: #333;
+}
+
+.options button.correct {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.options button.wrong {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* Countdown timer */
+.timer {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Leaderboard table styling */
+.leaderboard table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leaderboard th, .leaderboard td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.leaderboard th {
+  background-color: #f0f0f0;
+}
+
+/* Simple form styling */
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.input-group input, .input-group select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Back button used on sub‑pages */
+.back-button {
+  background-color: #6c757d;
+}
+
+.back-button:hover {
+  background-color: #5a6268;
+}
